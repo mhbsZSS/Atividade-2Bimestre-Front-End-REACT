@@ -1,0 +1,246 @@
+* {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+
+
+        body {
+
+            background-color: #f8f9fa; /* Fundo cinza bem claro */
+
+            color: #333; /* Texto cinza escuro para boa leitura */
+
+        }
+
+
+
+        /* 2. ESTILO DO CABEÇALHO */
+
+        .cabecalho-principal {
+
+            background-color: #d32f2f; /* Vermelho escuro da doceria */
+
+            color: white;
+
+            padding: 20px;
+
+            display: flex; /* Coloca logo e menu na mesma linha */
+
+            justify-content: space-between; /* Um de cada lado da tela */
+
+            align-items: center; /* Centraliza verticalmente */
+
+           
+
+        }
+
+
+
+       
+
+        /* Estilo dos links do menu */
+
+        .menu ul {
+
+            list-style: none; /* Tira as "bolinhas" da lista */
+
+            display: flex; /* Coloca os links do menu lado a lado */
+
+            gap: 25px; /* Espaço entre os links */
+
+        }
+
+
+
+        .menu a {
+
+            color: white;
+
+            text-decoration: none; /* Tira o sublinhado do link */
+
+            font-weight: bold;
+
+        }
+
+
+
+        .menu a:hover {
+
+            color: #ffc107; /* Fica amarelo ao passar o mouse! (Interatividade) */
+
+        }
+
+
+
+        /* 3. CONTEÚDO PRINCIPAL */
+
+        .conteudo-principal {
+
+            padding: 40px 20px;
+
+            text-align: center; /* Centraliza o título principal */
+
+        }
+
+
+
+        .titulo-pagina {
+
+            margin-bottom: 30px;
+
+            color: #d32f2f;
+
+        }
+
+
+
+        /* 4. A MÁGICA DO FLEXBOX (Organizando os Doces) */
+
+        .grade-de-doces {
+
+            display: flex; /* Transforma a caixa numa linha flexível */
+
+            justify-content: center; /* Centraliza os cartões no meio da tela */
+
+            gap: 30px; /* Espaço entre cada cartão de doce */
+
+            flex-wrap: wrap; /* Se a tela for pequena, joga o cartão pra baixo */
+
+        }
+
+
+
+        /* 5. ESTILO DO CARTÃO DE PIZZA (O Box Model na prática) */
+
+        .cartao-doces {
+
+            background-color: white;
+
+            padding: 20px; /* Espaço interno */
+
+            border-radius: 10px; /* Bordas arredondadas */
+
+            width: 300px; /* Largura fixa do cartão */
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar efeito 3D */
+
+            transition: transform 0.3s; /* Prepara uma animação suave */
+
+        }
+
+
+
+        .cartao-doces:hover {
+
+            transform: translateY(-10px); /* O cartão "pula" ao passar o mouse */
+
+        }
+
+
+
+        .cartao-doces img {
+
+            width: 100%; /* A imagem ocupa 100% da largura do cartão */
+
+            border-radius: 5px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+
+        .sabor-nome {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        .sabor-ingredientes {
+
+            font-size: 0.9rem;
+
+            color: #666;
+
+            margin-bottom: 15px;
+
+            height: 40px; /* Mantém os textos alinhados independente do tamanho */
+
+        }
+
+
+
+        .sabor-preco {
+
+            font-size: 1.4rem;
+
+            font-weight: bold;
+
+            color: #2e7d32; /* Verde para remeter a dinheiro/aprovação */
+
+            margin-bottom: 20px;
+
+        }
+
+
+
+        /* 6. ESTILO DO BOTÃO */
+
+        .botao-pedir {
+
+            display: inline-block; /* Permite colocar padding num link */
+
+            background-color: #ff9800; /* Amarelo/Laranja */
+
+            color: #000;
+
+            text-decoration: none;
+
+            padding: 10px 20px;
+
+            border-radius: 25px; /* Botão bem arredondado */
+
+            font-weight: bold;
+
+            transition: background-color 0.3s;
+
+        }
+
+
+
+        .botao-pedir:hover {
+
+            background-color: #e68a00; /* Escurece ao passar o mouse */
+
+        }
+
+
+
+        /* 7. RODAPÉ */
+
+        .rodape-principal {
+
+            background-color: #333;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+        } 
+
